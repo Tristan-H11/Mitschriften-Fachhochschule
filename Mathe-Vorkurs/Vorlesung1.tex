@@ -1,3 +1,9 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+
 \section{Mengen und Aussagen}
 \subsection{Aussagen}
 Aussagen sind objekte, die zwei Bedingungen erfüllen:
@@ -5,4 +11,53 @@ Aussagen sind objekte, die zwei Bedingungen erfüllen:
     \item Sie sind Zeichenketten, die in einer Grammatik formuliert sind.
     \item Sie müssen einen eindeutigen Wahrheitsgehalt innehaben (bspw. wahr oder falsch, + oder -).
 \end{enumerate}
+Aussagen werden mit lateinischen Großbuchstaben abgekürzt. (Großes Alphabet) \\
+Die Verknüpfung von Aussagen sieht entsprechend wie folgt aus: \textit{Aus A folgt B} heißt $A\Rightarrow B$.
+Die zugehörige Wahrheitstafel: \\ \\
+\begin{tabular}{c|c|c}
+    A & B & $A\Rightarrow B$ \\
+    + & + & + \\
+    + & - & - \\
+    - & + & + \\
+    - & - & +
+\end{tabular} 
+\\ \\
+Analog das Beispiel \textit{A genau dann, wenn B} oder auch \textit{A äquivalent B} heißt $A\Leftrightarrow B$ Die zugehörige Wahrheitstafel: \\ \\
+\begin{tabular}{c|c|c}
+    A & B & $A\Leftrightarrow B$ \\
+    + & + & + \\
+    + & - & - \\
+    - & + & - \\
+    - & - & +
+\end{tabular} 
+\\ \\
+\subsection{Was ist ein Beweis?}
+Ein Beweis besteht aus vielen Zwischenaussagen. \\
+Beweise:
+\begin{eqnarray*}
+    A&\Leftrightarrow& B \\
+    A\Leftrightarrow A_{1}\Leftrightarrow A_{2}&\Leftrightarrow& ...\Leftrightarrow B
+\end{eqnarray*}
 
+\subsection{Quantoren}
+\subsubsection{Allquantor}
+Der Allquantor $\forall$ drückt aus, dass eine bestimmte Bedingung oder Aussage für alle Objekte zutrifft. Beispiel:
+\begin{center}
+    Für alle reellen Zahlen x gilt: $(x+1)=x^{2}+2x+5$
+\end{center}
+\subsubsection{Existenzquantor}
+Der Existenzquantor $\exists$ drückt aus, dass es mindestens ein Objekt gibt, welches bestimmte Bedingungen erfüllt. Beispiel:
+\begin{center}
+    Es gibt ein reelles x mit $x+3=2x+5$
+\end{center}
+
+\section{Mengen}
+Mengen sind Sammlungen von Objekten. Objekte können in ihr nicht doppelt vorkommen. \\
+Die Menge der natürlichen Zahlen $\{0,1,2,3,\dots\}$ wird mit $\mathbb{N}$ abgekürzt. In der Informatik enthält $\mathbb{N}$ immer die Null.
+Richtig notiert: 
+\begin{eqnarray*}
+    \mathbb{N}&:=&\{0,1,2,3,\dots\} \text{ als Menge aller natürlichen Zahlen} \\
+    \mathbb{Z}&:=&\{\dots,-2,-1,0,1,2,\dots\} \text{ als Menge aller ganzen Zahlen} \\
+\end{eqnarray*}
+
+\end{document}
